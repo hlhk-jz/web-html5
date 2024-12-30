@@ -105,7 +105,7 @@
             ctx.stroke();*/
 
            //移动
-            ctx.save();
+           /* ctx.save();
             ctx.fillStyle="red";
             ctx.translate(100,300);
             ctx.scale(1,2);
@@ -116,7 +116,14 @@
             ctx.fillStyle="blue";
             ctx.translate(100,100);
             ctx.fillRect(30,30,100,100);
-            ctx.restore();
+            ctx.restore();*/
+
+           //设置背景图片
+            let imag = new Image();
+            imag.src = "http://gips3.baidu.com/it/u=3886271102,3123389489&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960";
+            imag.onload = function () {
+                ctx.drawImage(imag,0,0,600,600);
+            }
         }
     })
 
