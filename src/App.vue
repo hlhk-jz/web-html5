@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!--<WebCanvas/>-->
+   <ClockView/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import WebCanvas from "./components/WebCanvas"
+import ClockView from "./components/ClockView"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+     ClockView
+    //WebCanvas
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
